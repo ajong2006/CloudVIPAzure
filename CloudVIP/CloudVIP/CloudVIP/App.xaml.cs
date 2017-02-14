@@ -17,6 +17,7 @@ namespace CloudVIP
         protected override void RegisterTypes()
         {
             Container.RegisterTypeForNavigation<MainPage>();
+            Container.RegisterTypeForNavigation<About>();
         }
     }
 }
