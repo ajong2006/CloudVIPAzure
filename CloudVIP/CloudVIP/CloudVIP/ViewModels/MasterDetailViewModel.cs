@@ -1,6 +1,7 @@
 ﻿using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
+using CloudVIP.Models;
 
 namespace CloudVIP.ViewModels
 {
@@ -39,9 +40,9 @@ namespace CloudVIP.ViewModels
              * Otherwise, it will navigate to it normally
              */
             if (name.Equals("Navigation/CreateTime"))
-                await _navigationService.Navigate(name, null, true, true);
+                await _navigationService.NavigateAsync(name, null, true, true);
             else
-                await _navigationService.Navigate(name);
+                await _navigationService.NavigateAsync(name);
         }
 
         private void NavigateSelected(MenuModel item)
