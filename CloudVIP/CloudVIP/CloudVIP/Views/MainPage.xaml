@@ -4,29 +4,8 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="CloudVIP.Views.MainPage"
-             Title="{Binding Title}">
-    
-    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-        <Label Text="{Binding Title}" />
-        <Button Text="Make An Appointment" Command="{Binding NavigateCommand}" CommandParameter="Navigation/CreateTime" />
-
-        <DatePicker VerticalOptions="Center" Date="{x:Static sys:DateTime.Now}">
-            <DatePicker.Format>yyyy-MM-dd</DatePicker.Format>
-            <DatePicker.MinimumDate>
-               <!-- <sys:DateTime x:FactoryMethod="Parse">
-                    <x:Arguments>
-                        <x:String>Jan 1 2000</x:String>
-                    </x:Arguments>
-                </sys:DateTime> -->
-            </DatePicker.MinimumDate>
-            <DatePicker.MaximumDate>
-               <!-- <sys:DateTime x:FactoryMethod="Parse">
-                    <x:Arguments>
-                        <x:String>Dec 31 2050</x:String>
-                    </x:Arguments>
-                </sys:DateTime> -->
-            </DatePicker.MaximumDate>
-        </DatePicker>
-
-    </StackLayout>
+             Title="MainPage">
+  <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+    <Label Text="{Binding Title}" />
+  </StackLayout>
 </ContentPage>
