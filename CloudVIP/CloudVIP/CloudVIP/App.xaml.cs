@@ -11,7 +11,8 @@ namespace CloudVIP
         {
             InitializeComponent();
 
-            NavigationService.NavigateAsync("MainPage?title=Hello%20from%20Xamarin.Forms");
+           // NavigationService.NavigateAsync("MainPage?title=Hello%20from%20Xamarin.Forms");
+            NavigationService.NavigateAsync("About");
         }
 
         protected override void RegisterTypes()
