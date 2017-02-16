@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Microsoft.Azure.Mobile;
 using Prism.Unity;
 using Microsoft.Practices.Unity;
 
@@ -22,6 +23,7 @@ namespace CloudVIP.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+            MobileCenter.Configure("4a320671-6d4b-46d2-9c42-9ba8770fa89c");
             LoadApplication(new App(new AndroidInitializer()));
         }
     }
